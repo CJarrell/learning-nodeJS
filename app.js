@@ -31,6 +31,7 @@ var logger = function(req, res, next){
 	console.log('Logging...');
 	next();
 }
+
 app.use(logger);
 
 app.get('/', function(req, res){
